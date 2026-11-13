@@ -1,0 +1,278 @@
+{
+    "mode": "recorded_experiment",
+    "mode_note": "All figures come from a recorded, offline run on synthetic-fog footage. This is not a live mine-camera feed.",
+    "health": {
+        "status": "ok",
+        "service": "SIH26007 mine-vehicle-safety API",
+        "mode": "recorded_experiment",
+        "inference_enabled": false,
+        "data_dir_exists": true,
+        "csv_files": [
+            {
+                "id": "risk_results",
+                "kind": "csv",
+                "file": "data/output/risk_results.csv",
+                "state": "ok",
+                "rows": 196,
+                "message": null,
+                "modified": 1794558960
+            },
+            {
+                "id": "fog_evaluation",
+                "kind": "csv",
+                "file": "data/output/fog_evaluation_summary.csv",
+                "state": "ok",
+                "rows": 4,
+                "message": null,
+                "modified": 1794558960
+            },
+            {
+                "id": "recovery_comparison",
+                "kind": "csv",
+                "file": "data/output/recovery_comparison.csv",
+                "state": "ok",
+                "rows": 2,
+                "message": null,
+                "modified": 1794558960
+            }
+        ],
+        "videos": [
+            {
+                "id": "fog_risk_demo",
+                "file": "data/output/fog_risk_demo.mp4",
+                "available": true
+            },
+            {
+                "id": "visibility_comparison_demo",
+                "file": "data/output/visibility_comparison_demo.mp4",
+                "available": true
+            },
+            {
+                "id": "vehicle_clear",
+                "file": "data/input/vehicle.mp4",
+                "available": true
+            }
+        ]
+    },
+    "run": {
+        "video_id": "fog_risk_demo",
+        "total_frames": 240,
+        "fps": 24.0,
+        "duration_s": 10.0,
+        "width": 1280,
+        "height": 720
+    },
+    "status": "ok",
+    "warnings": [],
+    "tracks": {
+        "total": 4,
+        "confirmed": 4,
+        "min_confirm_frames": 8,
+        "by_class": {
+            "truck": 3,
+            "car": 1
+        },
+        "ids": [
+            1,
+            2,
+            6,
+            7
+        ]
+    },
+    "distribution": {
+        "observations": {
+            "SAFE": 132,
+            "WARNING": 57,
+            "DANGER": 7,
+            "total": 196
+        },
+        "frames": {
+            "SAFE": 132,
+            "WARNING": 57,
+            "DANGER": 7,
+            "with_vehicle": 196,
+            "total": 240,
+            "no_vehicle": 44
+        }
+    },
+    "peak_status": "DANGER",
+    "event_count": 11,
+    "recent_events": [
+        {
+            "track_id": 7,
+            "class_name": "truck",
+            "status": "WARNING",
+            "start_frame": 209,
+            "end_frame": 217,
+            "frames": 9,
+            "start_time_s": 8.67,
+            "end_time_s": 9.04,
+            "peak_growth_px": 40.2,
+            "min_est_distance_m": 7.89,
+            "min_proxy_ttc_s": 2.1,
+            "max_closing_speed_mps": 3.88,
+            "id": "E11"
+        },
+        {
+            "track_id": 7,
+            "class_name": "truck",
+            "status": "WARNING",
+            "start_frame": 203,
+            "end_frame": 205,
+            "frames": 3,
+            "start_time_s": 8.42,
+            "end_time_s": 8.54,
+            "peak_growth_px": 31.9,
+            "min_est_distance_m": 9.45,
+            "min_proxy_ttc_s": 2.3,
+            "max_closing_speed_mps": 4.18,
+            "id": "E10"
+        },
+        {
+            "track_id": 7,
+            "class_name": "truck",
+            "status": "WARNING",
+            "start_frame": 194,
+            "end_frame": 198,
+            "frames": 5,
+            "start_time_s": 8.04,
+            "end_time_s": 8.25,
+            "peak_growth_px": 34.0,
+            "min_est_distance_m": 10.46,
+            "min_proxy_ttc_s": 2.0,
+            "max_closing_speed_mps": 5.42,
+            "id": "E9"
+        },
+        {
+            "track_id": 6,
+            "class_name": "truck",
+            "status": "WARNING",
+            "start_frame": 158,
+            "end_frame": 160,
+            "frames": 3,
+            "start_time_s": 6.54,
+            "end_time_s": 6.67,
+            "peak_growth_px": 35.5,
+            "min_est_distance_m": 5.72,
+            "min_proxy_ttc_s": 4.3,
+            "max_closing_speed_mps": 1.34,
+            "id": "E8"
+        },
+        {
+            "track_id": 6,
+            "class_name": "truck",
+            "status": "WARNING",
+            "start_frame": 153,
+            "end_frame": 156,
+            "frames": 4,
+            "start_time_s": 6.33,
+            "end_time_s": 6.5,
+            "peak_growth_px": 33.8,
+            "min_est_distance_m": 5.9,
+            "min_proxy_ttc_s": 3.8,
+            "max_closing_speed_mps": 1.56,
+            "id": "E7"
+        },
+        {
+            "track_id": 6,
+            "class_name": "truck",
+            "status": "WARNING",
+            "start_frame": 151,
+            "end_frame": 151,
+            "frames": 1,
+            "start_time_s": 6.25,
+            "end_time_s": 6.29,
+            "peak_growth_px": 25.3,
+            "min_est_distance_m": 6.22,
+            "min_proxy_ttc_s": 5.7,
+            "max_closing_speed_mps": 1.1,
+            "id": "E6"
+        }
+    ],
+    "vehicles": [
+        {
+            "track_id": 1,
+            "class_name": "truck",
+            "frames_seen": 52,
+            "class_switches": 0,
+            "first_frame": 1,
+            "last_frame": 52,
+            "confirmed": true,
+            "peak_status": "SAFE",
+            "status_frames": {
+                "SAFE": 52,
+                "WARNING": 0,
+                "DANGER": 0
+            },
+            "max_growth_px": 11.6,
+            "max_width_px": 305.6,
+            "min_est_distance_m": 14.21,
+            "min_proxy_ttc_s": 3.9,
+            "max_closing_speed_mps": 4.62,
+            "avg_confidence": 0.67
+        },
+        {
+            "track_id": 2,
+            "class_name": "car",
+            "frames_seen": 48,
+            "class_switches": 3,
+            "first_frame": 54,
+            "last_frame": 105,
+            "confirmed": true,
+            "peak_status": "DANGER",
+            "status_frames": {
+                "SAFE": 14,
+                "WARNING": 27,
+                "DANGER": 7
+            },
+            "max_growth_px": 77.7,
+            "max_width_px": 693.6,
+            "min_est_distance_m": 2.54,
+            "min_proxy_ttc_s": 0.1,
+            "max_closing_speed_mps": 27.56,
+            "avg_confidence": 0.6
+        },
+        {
+            "track_id": 6,
+            "class_name": "truck",
+            "frames_seen": 39,
+            "class_switches": 0,
+            "first_frame": 119,
+            "last_frame": 162,
+            "confirmed": true,
+            "peak_status": "WARNING",
+            "status_frames": {
+                "SAFE": 26,
+                "WARNING": 13,
+                "DANGER": 0
+            },
+            "max_growth_px": 36.2,
+            "max_width_px": 766.9,
+            "min_est_distance_m": 5.66,
+            "min_proxy_ttc_s": 2.9,
+            "max_closing_speed_mps": 2.34,
+            "avg_confidence": 0.53
+        },
+        {
+            "track_id": 7,
+            "class_name": "truck",
+            "frames_seen": 57,
+            "class_switches": 4,
+            "first_frame": 164,
+            "last_frame": 220,
+            "confirmed": true,
+            "peak_status": "WARNING",
+            "status_frames": {
+                "SAFE": 40,
+                "WARNING": 17,
+                "DANGER": 0
+            },
+            "max_growth_px": 40.2,
+            "max_width_px": 565.6,
+            "min_est_distance_m": 4.71,
+            "min_proxy_ttc_s": 0.1,
+            "max_closing_speed_mps": 47.51,
+            "avg_confidence": 0.58
+        }
+    ]
+}

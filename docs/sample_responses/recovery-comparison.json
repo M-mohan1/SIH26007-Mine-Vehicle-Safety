@@ -1,0 +1,31 @@
+{
+    "source": "data/output/recovery_comparison.csv",
+    "warnings": [],
+    "rows": [
+        {
+            "pipeline": "Standard RGB in Heavy Fog (72%)",
+            "total_frames": 240,
+            "active_frames": 187,
+            "missed_frames": 53,
+            "detection_rate_pct": 77.9,
+            "avg_confidence": 0.54,
+            "role": "baseline"
+        },
+        {
+            "pipeline": "CLAHE Contrast-Enhanced RGB + Pseudo-IR Map",
+            "total_frames": 240,
+            "active_frames": 223,
+            "missed_frames": 17,
+            "detection_rate_pct": 92.9,
+            "avg_confidence": 0.67,
+            "role": "enhanced"
+        }
+    ],
+    "status": "ok",
+    "delta": {
+        "detection_rate_pp": 15.0,
+        "blind_frames_recovered": 36,
+        "avg_confidence": 0.13
+    },
+    "video_id": "visibility_comparison_demo"
+}

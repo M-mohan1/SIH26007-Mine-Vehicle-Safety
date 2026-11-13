@@ -1,0 +1,77 @@
+{
+    "status": "ok",
+    "source": "data/output/risk_results.csv",
+    "warnings": [],
+    "video_id": "fog_risk_demo",
+    "fps": 24.0,
+    "total_frames": 240,
+    "count": 196,
+    "observations": [
+        {
+            "frame": 1,
+            "track_id": 1,
+            "class_name": "truck",
+            "confidence": 0.7,
+            "width_px": 226.9,
+            "height_px": 159.0,
+            "growth_px": 0.0,
+            "est_distance_m": 19.04,
+            "closing_speed_mps": 0.0,
+            "proxy_ttc_s": null,
+            "risk_status": "SAFE"
+        },
+        {
+            "frame": 2,
+            "track_id": 1,
+            "class_name": "truck",
+            "confidence": 0.66,
+            "width_px": 227.7,
+            "height_px": 159.5,
+            "growth_px": 0.8,
+            "est_distance_m": 19.01,
+            "closing_speed_mps": 0.83,
+            "proxy_ttc_s": 23.0,
+            "risk_status": "SAFE"
+        },
+        {
+            "frame": 3,
+            "track_id": 1,
+            "class_name": "truck",
+            "confidence": 0.64,
+            "width_px": 227.5,
+            "height_px": 159.3,
+            "growth_px": 0.7,
+            "est_distance_m": 19.0,
+            "closing_speed_mps": 0.49,
+            "proxy_ttc_s": 38.5,
+            "risk_status": "SAFE"
+        },
+        {
+            "frame": 4,
+            "track_id": 1,
+            "class_name": "truck",
+            "confidence": 0.62,
+            "width_px": 228.2,
+            "height_px": 159.7,
+            "growth_px": 1.4,
+            "est_distance_m": 18.96,
+            "closing_speed_mps": 0.63,
+            "proxy_ttc_s": 29.9,
+            "risk_status": "SAFE"
+        },
+        {
+            "frame": 5,
+            "track_id": 1,
+            "class_name": "truck",
+            "confidence": 0.6,
+            "width_px": 230.3,
+            "height_px": 161.2,
+            "growth_px": 3.5,
+            "est_distance_m": 18.89,
+            "closing_speed_mps": 0.91,
+            "proxy_ttc_s": 20.7,
+            "risk_status": "SAFE"
+        }
+    ],
+    "_note": "Sample trimmed to the first 5 of 196 observations."
+}

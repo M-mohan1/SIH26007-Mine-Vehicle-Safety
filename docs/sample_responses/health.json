@@ -1,0 +1,53 @@
+{
+    "status": "ok",
+    "service": "SIH26007 mine-vehicle-safety API",
+    "mode": "recorded_experiment",
+    "inference_enabled": false,
+    "data_dir_exists": true,
+    "csv_files": [
+        {
+            "id": "risk_results",
+            "kind": "csv",
+            "file": "data/output/risk_results.csv",
+            "state": "ok",
+            "rows": 196,
+            "message": null,
+            "modified": 1794558960
+        },
+        {
+            "id": "fog_evaluation",
+            "kind": "csv",
+            "file": "data/output/fog_evaluation_summary.csv",
+            "state": "ok",
+            "rows": 4,
+            "message": null,
+            "modified": 1794558960
+        },
+        {
+            "id": "recovery_comparison",
+            "kind": "csv",
+            "file": "data/output/recovery_comparison.csv",
+            "state": "ok",
+            "rows": 2,
+            "message": null,
+            "modified": 1794558960
+        }
+    ],
+    "videos": [
+        {
+            "id": "fog_risk_demo",
+            "file": "data/output/fog_risk_demo.mp4",
+            "available": true
+        },
+        {
+            "id": "visibility_comparison_demo",
+            "file": "data/output/visibility_comparison_demo.mp4",
+            "available": true
+        },
+        {
+            "id": "vehicle_clear",
+            "file": "data/input/vehicle.mp4",
+            "available": true
+        }
+    ]
+}

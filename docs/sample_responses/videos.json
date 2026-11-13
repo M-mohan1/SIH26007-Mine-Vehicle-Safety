@@ -1,0 +1,54 @@
+{
+    "status": "ok",
+    "videos": [
+        {
+            "id": "fog_risk_demo",
+            "title": "Annotated risk detection (65% synthetic fog)",
+            "kind": "annotated",
+            "description": "Output of src/risk/risk_demo.py: YOLO11n + ByteTrack boxes, track IDs, risk status, estimated distance and proxy TTC drawn on every frame.",
+            "has_telemetry": true,
+            "available": true,
+            "file": "data/output/fog_risk_demo.mp4",
+            "stream_url": "/api/videos/fog_risk_demo/stream",
+            "size_bytes": 1251330,
+            "width": 1280,
+            "height": 720,
+            "duration_s": 10.0,
+            "frames": 240,
+            "fps": 24.0
+        },
+        {
+            "id": "visibility_comparison_demo",
+            "title": "Visibility recovery comparison (72% synthetic fog)",
+            "kind": "comparison",
+            "description": "Output of src/detection/visibility_recovery.py: raw foggy RGB (left) beside CLAHE-enhanced RGB with a pseudo-IR contrast inset (right).",
+            "has_telemetry": false,
+            "available": true,
+            "file": "data/output/visibility_comparison_demo.mp4",
+            "stream_url": "/api/videos/visibility_comparison_demo/stream",
+            "size_bytes": 1027912,
+            "width": 1280,
+            "height": 360,
+            "duration_s": 10.0,
+            "frames": 240,
+            "fps": 24.0
+        },
+        {
+            "id": "vehicle_clear",
+            "title": "Clear source footage (no annotations)",
+            "kind": "source",
+            "description": "The original clear video that the synthetic fog is applied to.",
+            "has_telemetry": false,
+            "available": true,
+            "file": "data/input/vehicle.mp4",
+            "stream_url": "/api/videos/vehicle_clear/stream",
+            "size_bytes": 2720065,
+            "width": 1280,
+            "height": 720,
+            "duration_s": 10.0,
+            "frames": 240,
+            "fps": 24.0
+        }
+    ],
+    "available_count": 3
+}

@@ -1,0 +1,14 @@
+python -c '
+yaml_content = """tracker_type: bytetrack
+track_high_thresh: 0.45
+track_low_thresh: 0.15
+new_track_thresh: 0.55
+track_buffer: 60
+match_thresh: 0.85
+fuse_score: True
+gmc_method: sparseOptFlow
+"""
+with open("src/detection/custom_bytetrack.yaml", "w", encoding="utf-8") as f:
+    f.write(yaml_content)
+print("[SUCCESS] Wrote clean src/detection/custom_bytetrack.yaml")
+'

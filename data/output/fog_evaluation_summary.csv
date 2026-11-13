@@ -1,0 +1,5 @@
+Visibility Condition,Fog Intensity,Total Frames,Active Frames,Blind-Spot Frames,Detection Rate (%),Confirmed Tracks (>=8f),Noise/Flicker IDs (<8f),Avg Confidence
+0% Clear (Baseline),0%,240,216,24,90.0,4,1,0.77
+40% Light Fog,40%,240,217,23,90.4,4,0,0.72
+65% Medium Fog,65%,240,206,34,85.8,4,0,0.6
+80% Dense Fog,80%,240,104,136,43.3,3,0,0.52

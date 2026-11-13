@@ -1,0 +1,3 @@
+Pipeline Mode,Total Frames,Active Detection Frames,Missed Blind-Spot Frames,Detection Rate (%),Avg Confidence
+Standard RGB in Heavy Fog (72%),240,187,53,77.9,0.54
+CLAHE Contrast-Enhanced RGB + Pseudo-IR Map,240,223,17,92.9,0.67

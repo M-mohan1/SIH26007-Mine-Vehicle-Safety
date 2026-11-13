@@ -1,0 +1,6 @@
+
+streamlit==1.32.0
+pandas==2.2.1
+ultralytics==8.1.24
+opencv-python-headless==4.9.0.80
+typing_extensions==4.10.0

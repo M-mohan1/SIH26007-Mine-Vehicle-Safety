@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "IBM Plex Sans", "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+
+  --color-ink-950: #101215;
+  --color-ink-900: #15181c;
+  --color-ink-850: #1a1d22;
+  --color-ink-800: #1f2329;
+  --color-ink-700: #2a2f36;
+  --color-ink-600: #3a4049;
+  --color-ink-500: #596069;
+  --color-ink-400: #8a929d;
+  --color-ink-300: #aab1bb;
+  --color-ink-200: #cfd4db;
+  --color-ink-100: #e7eaee;
+
+  --color-brand-400: #f79a45;
+  --color-brand-500: #f2801f;
+  --color-brand-600: #d96a10;
+
+  --color-safe: #3ecf8e;
+  --color-warn: #f6b93b;
+  --color-danger: #f0524f;
+}
+
+html, body, #root { height: 100%; }
+body {
+  margin: 0;
+  background: var(--color-ink-950);
+  color: var(--color-ink-100);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+* { scrollbar-color: var(--color-ink-600) transparent; }
+:focus-visible { outline: 2px solid var(--color-brand-500); outline-offset: 2px; }
+
+.fade-in { animation: fade-in 180ms ease-out; }
+@keyframes fade-in { from { opacity: 0; } to { opacity: 1; } }
+.pulse-soft { animation: pulse-soft 1.4s ease-in-out infinite; }
+@keyframes pulse-soft { 50% { opacity: .45; } }
+@media (prefers-reduced-motion: reduce) {
+  .fade-in, .pulse-soft { animation: none; }
+  * { transition-duration: 0.01ms !important; }
+}
+.tabular { font-variant-numeric: tabular-nums; }

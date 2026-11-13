@@ -1,0 +1,60 @@
+{
+    "source": "data/output/fog_evaluation_summary.csv",
+    "warnings": [],
+    "rows": [
+        {
+            "condition": "0% Clear (Baseline)",
+            "fog_intensity": "0%",
+            "total_frames": 240,
+            "active_frames": 216,
+            "blind_spot_frames": 24,
+            "detection_rate_pct": 90.0,
+            "confirmed_tracks": 4,
+            "noise_ids": 1,
+            "avg_confidence": 0.77,
+            "fog_intensity_pct": 0.0,
+            "detection_rate_delta_pp": null
+        },
+        {
+            "condition": "40% Light Fog",
+            "fog_intensity": "40%",
+            "total_frames": 240,
+            "active_frames": 217,
+            "blind_spot_frames": 23,
+            "detection_rate_pct": 90.4,
+            "confirmed_tracks": 4,
+            "noise_ids": 0,
+            "avg_confidence": 0.72,
+            "fog_intensity_pct": 40.0,
+            "detection_rate_delta_pp": 0.4
+        },
+        {
+            "condition": "65% Medium Fog",
+            "fog_intensity": "65%",
+            "total_frames": 240,
+            "active_frames": 206,
+            "blind_spot_frames": 34,
+            "detection_rate_pct": 85.8,
+            "confirmed_tracks": 4,
+            "noise_ids": 0,
+            "avg_confidence": 0.6,
+            "fog_intensity_pct": 65.0,
+            "detection_rate_delta_pp": -4.2
+        },
+        {
+            "condition": "80% Dense Fog",
+            "fog_intensity": "80%",
+            "total_frames": 240,
+            "active_frames": 104,
+            "blind_spot_frames": 136,
+            "detection_rate_pct": 43.3,
+            "confirmed_tracks": 3,
+            "noise_ids": 0,
+            "avg_confidence": 0.52,
+            "fog_intensity_pct": 80.0,
+            "detection_rate_delta_pp": -46.7
+        }
+    ],
+    "status": "ok",
+    "baseline_condition": "0% Clear (Baseline)"
+}
